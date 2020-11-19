@@ -29,5 +29,14 @@
 // Output: "/c"
 
 var simplifyPath = function(path) {
-
+  let regex = /\/+/
+  path.replace(regex, '/')
+  if ( path.indexOf('/') === path.length ) {
+    path.splice( path.length - 1, 1 )
+  }
+  return path;
 };
+
+let test = "/home//foo/"
+
+console.log( simplifyPath( test ) );
