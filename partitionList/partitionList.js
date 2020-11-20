@@ -8,5 +8,32 @@
 // Output: 1->2->2->4->3->5
 
 var partition = function(head, x) {
+  let store = [];
+  let remaining = [];
+  let newList = {}
+  const pluck = function ( ll ) {
+    store.push(ll.value)
+    if ( ll.next !== null ) {
+      pluck( ll.next );
+    }
+  } // store is filled with all numbers
+  for ( let i = 0; i < store.length; i++ ) {
+    let curNum = store[ i ];
+    const traverse = function ( ll ) {
+      if ( node.value === null ) {
+        node.value = {
+          value: curNum,
+          next: {
+            value: null
+          }
+        }
+      } else {
+        traverse ( node.next )
+      }
+    }
+  }
+  for ( let i = 0; i < remaining.length; i++ ) {
+    let curNum
+  }
 
 };

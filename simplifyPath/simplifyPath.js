@@ -34,6 +34,7 @@ var simplifyPath = function(path) {
   if ( path.indexOf('/') === path.length ) {
     path.splice( path.length - 1, 1 )
   }
+
   return path;
 };
 
