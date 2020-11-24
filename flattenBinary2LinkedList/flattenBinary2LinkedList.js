@@ -93,5 +93,4 @@ let testTree = {
   }]
 }
 
-
 console.log( flatten( testTree ) );
