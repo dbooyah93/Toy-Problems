@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\toy-problems-2020/reverseList/reverseList.js"
+      "program": "${workspaceFolder}\\toy-problems-2020/binaryTreeMaxPathSum/binaryTreeMaxPathSum.js"
     }
   ]
 }
